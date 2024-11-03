@@ -1,0 +1,137 @@
+img {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Center image on all screens */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+label {
+    display: block; /* Stack label above input */
+    text-align: center; /* Center label */
+    font-size: x-large;
+    margin-top: 10px; /* Space above label */
+}
+
+input {
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 400px; /* Limit max width */
+    height: 8vh;
+    margin: 10px auto; /* Center input */
+    outline: 1px solid blue;
+    display: block; /* Make input a block element */
+}
+
+#i1 {
+    color: #1877F2;
+}
+
+#i2 {
+    color: #FF0000;
+}
+
+#i3 {
+    color: #E4405F;
+}
+
+button {
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 400px; /* Limit max width */
+    background-color: #1877F2;
+    color: white;
+    height: 7vh;
+    font-size: large;
+    margin: 5px auto; /* Center button */
+    display: block; /* Make button a block element */
+}
+
+.data {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    outline: 4px solid black;
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 400px; /* Limit max width */
+    margin: 10px auto; /* Center data box */
+    font-size: larger;
+    font-weight: bold;
+    display: none;
+    padding: 10px; /* Added padding for better spacing */
+}
+
+/* Media Queries */
+
+/* For small screens (mobile devices) */
+@media (max-width: 600px) {
+    img {
+        width: 50%; /* Increased width for smaller screens */
+        margin-left: 0; /* Center image */
+    }
+
+    label {
+        font-size: large; /* Adjust font size */
+    }
+    h1{
+        text-align: start;
+        font-size: x-large;
+        margin-left: 10px;
+    }
+
+    input,
+    button,
+    .data {
+        width: 90%; /* Full width on mobile */
+        margin: 10px; /* Center elements */
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+    img {
+        width: 40%; /* Adjust image width */
+        margin: 20px auto; /* Center image */
+    }
+
+    input,
+    button,
+    .data {
+        width: 80%; /* Wider for medium screens */
+        margin: 10px auto; /* Center elements */
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 901px) {
+    img {
+        width: 15%; /* Maintain original width */
+        margin-left: auto; /* Center image */
+        margin-right: auto;
+    }
+
+    label {
+        margin-left: 0; /* Reset margin */
+        text-align: center; /* Center label */
+    }
+
+    input,
+    button,
+    .data {
+        width: 40%; /* Maintain original width */
+        margin-left: auto; /* Center elements */
+        margin-right: auto;
+    }
+}
